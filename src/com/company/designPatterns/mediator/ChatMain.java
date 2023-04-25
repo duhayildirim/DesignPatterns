@@ -13,15 +13,17 @@ public class ChatMain {
 //            — Remote Student A : Hi, great. I have lots of things to do, how about you?
 //            — All On-site Students receive: Hi, great. I have lots of things to do, how about you?
 //            — All Remote Students receive: Hi, great. I have lots of things to do, how about you?
-//            — On-site Student B : It similar.
+//            — On-site Student B : It similar :(.
 //    One should think this app like whatsapp group.
     public static void main(String[] args) {
         ChatMediator chatMediator = new ChatMediator();
-        OnSiteStudent onsiteStudentA = new OnSiteStudent(chatMediator, "On-site student A");
-        RemoteStudent remoteStudentA = new RemoteStudent(chatMediator, "Remote student A");
+        Student onsiteStudentA = new OnSiteStudent(chatMediator, "On-site student A");
+        Student remoteStudentA = new RemoteStudent(chatMediator, "Remote student A");
+        Student onsiteStudentB = new OnSiteStudent(chatMediator, "Onsite Student B");
 
         onsiteStudentA.sendMessage("Hi remote, how is going?");
         remoteStudentA.sendMessage("Hi, great. I have lots of things");
+        onsiteStudentB.sendMessage("It's similar :(");
         chatMediator.sendMessage(null, "Hello everyone, I'm doing great. I have lots of things to do, how about you?");
 
     }
