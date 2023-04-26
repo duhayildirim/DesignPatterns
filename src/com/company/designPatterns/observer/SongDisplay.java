@@ -1,4 +1,4 @@
-package observer;
+package com.company.designPatterns.observer;
 
 public class SongDisplay implements Observer {
     private boolean playing;
