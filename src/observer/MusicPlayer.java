@@ -1,5 +1,8 @@
 package observer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MusicPlayer {
     private boolean playing;
     private List<String> playlist = new ArrayList<>();
