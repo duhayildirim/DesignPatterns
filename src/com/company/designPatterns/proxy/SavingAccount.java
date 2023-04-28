@@ -1,8 +1,8 @@
 package com.company.designPatterns.proxy;
 
 public class SavingAccount implements BankAccount {
-    private double balance;
-    public SavingAccount(Double initialBalance) {
+    private int balance;
+    public SavingAccount(int initialBalance) {
         this.balance = initialBalance;
     }
 
